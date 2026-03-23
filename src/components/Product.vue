@@ -33,8 +33,9 @@ watch(
 () => route.params,
 async () => {
 try {
- const response=await fetch("/menu/"+route.params.cat+"/"+route.params.id)
- product.value=await response.json()
+ const response=await fetch("/data/"+route.params.cat+".json")
+let list=await response.json()
+product.value=list.find((elem) => elem.id==route.params.id)
 } catch (err) {
  product.value=err
 }

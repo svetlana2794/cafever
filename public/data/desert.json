@@ -4,7 +4,7 @@
 		"name": "Чизкейк Сан-Себастьян",
 		"structure": "Креметта, сахар, сливки 22%, фисташки, сливки 33%, мука пшеничная, яйцо куриное.",
 		"price": 450,
-		"image": "data/desert/desert1.jpg",
+		"image": "../data/desert/desert1.jpg",
 		"cat": "Десерты"
 	},
 	{
@@ -12,7 +12,7 @@
 		"name": "Пирог лимонный с меренгой",
 		"structure": "Крем лимонный, сахарный заварной белок, тесто песочное.",
 		"price": 450,
-		"image": "data/desert/desert2.jpg",
+		"image": "../data/desert/desert2.jpg",
 		"cat": "Десерты"
 	},
 	{
@@ -20,7 +20,7 @@
 		"name": "Профитроли",
 		"structure": "Крем Тирамису, глазурь, тесто, фисташки.",
 		"price": 450,
-		"image": "data/desert/desert3.jpg",
+		"image": "../data/desert/desert3.jpg",
 		"cat": "Десерты"
 	},
 	{
@@ -28,7 +28,7 @@
 		"name": "Тирамису",
 		"structure": "Сахар, эспрессо, яйцо куриное, сливки 33%, маскарпоне, печенье савоярди, какао.",
 		"price": 450,
-		"image": "data/desert/desert4.jpg",
+		"image": "../data/desert/desert4.jpg",
 		"cat': "Десерты"
 	}
 ]
