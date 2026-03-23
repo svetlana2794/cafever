@@ -1,0 +1,71 @@
+<script setup>
+import ButtonCart from "./ButtonCart.vue"
+import Addition from "./Addition.vue"
+import { useCartStore } from "../stores/storeCart.js"
+
+import { ref, reactive, watch } from "vue"
+import { useRoute, useRouter } from "vue-router"
+
+const storeCart=useCartStore()
+const product=ref(null)
+const newElem=reactive({
+id: "",
+name: "",
+price: "",
+image: "",
+quantity: 1,
+adds: new Map()
+})
+const adds=reactive([])
+const route=useRoute()
+const router=useRouter()
+
+function addCart() {
+newElem.id=product.value.id
+newElem.name=product.value.name
+newElem.price=product.value.price
+newElem.image=product.value.image
+storeCart.addCart(product.value.id, newElem)
+newElem.id=""
+}
+
+watch(
+() => route.params,
+async () => {
+try {
+ const response=await fetch("/menu/"+route.params.cat+"/"+route.params.id)
+ product.value=await response.json()
+} catch (err) {
+ product.value=err
+}
+},
+{immediate: true,
+deep: true}
+)
+</script>
+
+<template>
+
+<div class="bg-[#ede0d4] rounded-xl m-2 p-2 h-full">
+<h2 class="text-[#7f5539] text-2xl text-center py-2 px-16 w-full relative font-[Futura]">
+<button @click="router.go(-1)" class="absolute top-2 left-2">
+<font-awesome-icon icon="fa-solid fa-arrow-left"/>
+</button>
+{{product.name}}
+</h2>
+<img :src="'../'+product.image" class="mx-auto my-6 w-lg md:w-3xl rounded-lg">
+<div class="w-full m-2 md:text-lg xl:text-xl">
+{{product.structure}}
+</div>
+<span class="text-[#b23a48] font-bold m-2 md:text-lg xl:text-xl">{{product.price}} руб.</span>
+<Addition v-if="route.params.cat=='pizza'" @handle-add="(name, price) => newElem.adds.set(name, price)" :newElem="newElem"/>
+<button @click="addCart" :disabled="storeCart.cart.has(product.id)" class="text-white rounded-xl bg-[#b23a48] hover:bg-[#8c2f39] disabled:bg-[#e6ccb2] disabled:text-black py-2 px-4 mx-auto my-2 block md:text-lg xl:text-xl">{{storeCart.cart.has(product.id) ? 'Добавлено' : 'В корзину'}}</button>
+
+<ButtonCart/>
+</div>
+
+</template>
+
+<style scoped>
+</style>
+
