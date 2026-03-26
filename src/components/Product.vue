@@ -16,7 +16,7 @@ image: "",
 quantity: 1,
 adds: new Map()
 })
-const adds=reactive([])
+const adds=ref(null)
 const route=useRoute()
 const router=useRouter()
 
@@ -39,6 +39,12 @@ product.value=list.find((elem) => elem.id==route.params.id)
 } catch (err) {
  product.value=err
 }
+try {
+ const response=await fetch("/data/add.json")
+adds.value=await response.json()
+} catch (err) {
+ adds.value=err
+}
 },
 {immediate: true,
 deep: true}
@@ -54,7 +60,7 @@ deep: true}
 </button>
 {{product.name}}
 </h2>
-<img :src="'../'+product.image" class="mx-auto my-6 w-lg md:w-3xl rounded-lg">
+<img :src="product.image" class="mx-auto my-6 w-lg md:w-3xl rounded-lg">
 <div class="w-full m-2 md:text-lg xl:text-xl">
 {{product.structure}}
 </div>

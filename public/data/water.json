@@ -1,27 +1,27 @@
 [
 	{
-		"id": 1,
+		"id": 51,
 		"name": "Кока Кола",
 		"price": 250,
 		"image": "/data/water/water1.jpg",
 		"cat": "Напитки"
 	},
 	{
-		"id": 2,
+		"id": 52,
 		"name": "Напиток Добрый Апельсин",
 		"price": 240,
 		"image": "/data/water/water2.jpg",
 		"cat": "Напитки"
 	},
 	{
-		"id": 3,
+		"id": 53,
 		"name": "Напиток Добрый Лимон-Лайм",
 		"price": 240,
 		"image": "/data/water/water3.jpg",
 		"cat": "Напитки"
 	},
 	{
-		"id": 4,
+		"id": 54,
 		"name": "Сок Rich яблоко",
 		"price": 250,
 		"image": "/data/water/water4.jpg",
