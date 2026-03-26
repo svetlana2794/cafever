@@ -4,7 +4,7 @@
 		"name": "Картофель фри с кетчупом",
 		"structure": "Картофель фри, масло фритюрное, соль, кетчуп",
 		"price": 250,
-		"image": "data/garnir/garnir1.jpg",
+		"image": "/data/garnir/garnir1.jpg",
 		"cat": "Гарниры"
 	},
 	{
@@ -12,7 +12,7 @@
 		"name": "Картофельное пюре 200г",
 		"structure": "Картофель, молоко, соль, масло сливочное.",
 		"price": 250,
-		"image": "data/garnir/garnir2.jpg",
+		"image": "/data/garnir/garnir2.jpg",
 		"cat": "Гарниры"
-	},
+	}
 ]

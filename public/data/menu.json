@@ -3,54 +3,54 @@
   "id": 1,
   "cat": "desert",
   "name": "Десерты",
-  "image": "data/desert/desert1.jpg"
+  "image": "/data/desert/desert1.jpg"
  },
  {
   "id": 2,
   "cat": "garnir",
   "name": "Гарниры",
-  "image": "data/garnir/garnir1.jpg"
+  "image": "/data/garnir/garnir1.jpg"
  },
  {
   "id": 3,
   "cat": "hot",
   "name": "Горячие блюда",
-  "image": "data/hot/hot1.jpg"
+  "image": "/data/hot/hot1.jpg"
  },
  {
   "id": 4,
   "cat": "pasta",
   "name": "Паста",
-  "image": "data/pasta/pasta1.jpg"
+  "image": "/data/pasta/pasta1.jpg"
  },
  {
   "id": 5,
   "cat": "pizza",
   "name": "Пицца",
-  "image": "data/pizza/pizza1.jpg"
+  "image": "/data/pizza/pizza1.jpg"
  },
  {
   "id": 6,
   "cat": "rizotto",
   "name": "Ризотто",
-  "image": "data/rizotto/rizotto1.jpg"
+  "image": "/data/rizotto/rizotto1.jpg"
  },
  {
   "id": 7,
   "cat": "salat",
   "name": "Салаты",
-  "image": "data/salat/salat1.jpg"
+  "image": "/data/salat/salat1.jpg"
  },
  {
   "id": 8,
   "cat": "sup",
   "name": "Супы",
-  "image": "data/sup/sup1.jpg"
+  "image": "/data/sup/sup1.jpg"
  },
  {
   "id": 9,
   "cat": "water",
   "name": "Напитки",
-  "image": "data/water/water1.jpg"
+  "image": "/data/water/water1.jpg"
  }
 ]
