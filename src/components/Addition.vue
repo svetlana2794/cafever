@@ -10,7 +10,7 @@ watch(
 addProds,
 async () => {
 try {
- const response=await fetch("/add")
+ const response=await fetch("/data/add.json")
  addProds.value=await response.json()
 } catch (err) {
  addProds.value=err

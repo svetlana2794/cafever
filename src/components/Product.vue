@@ -16,7 +16,7 @@ image: "",
 quantity: 1,
 adds: new Map()
 })
-const adds=ref(null)
+const adds=reactive([])
 const route=useRoute()
 const router=useRouter()
 
@@ -38,12 +38,6 @@ let list=await response.json()
 product.value=list.find((elem) => elem.id==route.params.id)
 } catch (err) {
  product.value=err
-}
-try {
- const response=await fetch("/data/add.json")
-adds.value=await response.json()
-} catch (err) {
- adds.value=err
 }
 },
 {immediate: true,
