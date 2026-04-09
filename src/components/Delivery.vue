@@ -26,6 +26,8 @@ router.replace("/acknow")
 
 <h2 class="text-[#7f5539] text-3xl md:text-center font-[Futura] mb-6 px-16">
 <button @click="router.go(-1)" class="absolute top-2 left-2">
+<font-awesome-icon icon="fa-solid fa-arrow-left"/>
+</button>
 Шаг 2. Адрес доставки
 </h2>
 

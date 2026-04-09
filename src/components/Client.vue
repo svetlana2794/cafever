@@ -22,6 +22,8 @@ router.replace("/delivery")
 <form @submit.prevent="createClient" class="p-6 pb-32 bg-[#ede0d4] rounded-xl m-2 relative h-full">
 <h2 class="text-[#7f5539] text-3xl text-center font-[Futura] mb-6 px-16">
 <button @click="router.go(-1)" class="absolute top-2 left-2">
+<font-awesome-icon icon="fa-solid fa-arrow-left"/>
+</button>
 Шаг 1. Контактные данные</h2>
 
 <label class="inline-block w-full md:w-1/4 md:text-right p-2 pl-0 after:text-red-500 after:content-['*'] my-3">Имя</label>
