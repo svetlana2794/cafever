@@ -30,7 +30,7 @@ router.replace("/acknow")
 </h2>
 
 <label class="inline-block w-full md:w-1/4 md:text-right p-2 mt-4 mb-2 md:my-4 md:text-right after:text-red-500 after:content-['*']">Улица</label>
-<input type="text" v-model="street" class="w-full md:w-3/4 p-2 mb-4 md:my-4 rounded-lg border border-[#9c6644] border-solid focus:border-[#8c2f39]" pattern="\w{3,}>
+<input type="text" v-model="street" class="w-full md:w-3/4 p-2 mb-4 md:my-4 rounded-lg border border-[#9c6644] border-solid focus:border-[#8c2f39]" pattern="\w{3,}">
 
 <br>
 
