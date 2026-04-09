@@ -70,7 +70,7 @@ const router=useRouter()
 <template v-if="storeCart.cart.size==0">
 <p class="text-center px-10 py-8">В корзине пока пусто</p>
 
-<RouterLink class="bg-[#b23a46] text-white hover:bg-[da1e37] px-4 py-2 block mx-auto my-10 w-1/4 text-center rounded-full" to="/menu">Меню</RouterLink>
+<RouterLink class="bg-[#b23a46] text-white hover:bg-[da1e37] px-4 py-2 block mx-auto my-10 text-center rounded-full" to="/menu">Меню</RouterLink>
 </template>
 
 </div>

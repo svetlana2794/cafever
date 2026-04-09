@@ -21,7 +21,7 @@ try {
 </script>
 
 <template>
-<ul class="text-base mx-2">
+<ul class="text-base mx-2 mt-2 mb-6">
 <li v-for="item in addProds" :key="item.id" class="my-4 flex justify-between items-center">
 
 <span class="grow">{{item.name}}</span>

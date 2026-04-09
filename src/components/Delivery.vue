@@ -22,25 +22,29 @@ router.replace("/acknow")
 </script>
 
 <template>
-<form @submit.prevent="createOrder" class="p-2 pb-20 bg-[#ede0d4] rounded-xl m-2 relative h-full">
+<form @submit.prevent="createOrder" class="p-6 pb-20 bg-[#ede0d4] rounded-xl m-2 relative h-full">
 
-<h2 class="text-[#7f5539] text-3xl md:text-center font-[Futura] mb-6">
-<span class="float-left">Шаг 2</span>
-Адрес доставки
+<h2 class="text-[#7f5539] text-3xl md:text-center font-[Futura] mb-6 px-16">
+<button @click="router.go(-1)" class="absolute top-2 left-2">
+Шаг 2. Адрес доставки
 </h2>
 
-<label class="inline-block w-full md:w-1/4 md:text-right p-2 mt-4 mb-2 md:my-4 md:text-right after:text-red-500 after:content-['*']">Улица</label>
-<input type="text" v-model="street" class="w-full md:w-3/4 p-2 mb-4 md:my-4 rounded-lg border border-[#9c6644] border-solid focus:border-[#8c2f39]" pattern="\w{3,}">
+<label class="inline-block w-full md:w-1/5 md:text-right p-2 mt-4 mb-2 md:my-4 md:text-right after:text-red-500 after:content-['*']">Улица</label>
+<input type="text" v-model="street" class="w-full md:w-4/5 p-2 mb-4 md:my-4 rounded-lg border border-[#9c6644] border-solid focus:border-[#8c2f39]" pattern="\w{3,}" required>
 
 <br>
 
-<label class="inline-block text-right p-2 my-4 md:text-right after:text-red-500 after:content-['*']">Дом</label>
-<input type="text" v-model="house"class="inline-block p-2 my-4 rounded-lg border border-[#9c6644] border-solid focus:border-[#8c2f39]" maxlength="6" pattern="\d|\/|\w+">
+<label class="inline-block text-right p-2 my-4 md:text-right after:text-red-500 after:content-['*'] md:w-1/5">Дом</label>
+<input type="text" v-model="house"class="inline-block p-2 my-4 rounded-lg border border-[#9c6644] border-solid focus:border-[#8c2f39]" maxlength="6" pattern=".+" required>
 
-<label class="inline-block text-right p-2 my-4 md:text-right">Корпус</label>
+<br>
+
+<label class="inline-block text-right p-2 my-4 md:text-right md:w-1/5">Корпус</label>
 <input type="text" v-model="corpus" class="p-2 my-4 rounded-lg border border-[#9c6644] border-solid focus:border-[#8c2f39]" maxlength="6">
 
-<label class="inline-block text-right p-2 my-4 md:text-right">Строение</label>
+<br>
+
+<label class="inline-block text-right p-2 my-4 md:text-right md:w-1/5">Строение</label>
 <input type="text" v-model="building" class="p-2 my-4 rounded-lg border border-[#9c6644] border-solid focus:border-[#8c2f39]" maxlength="6">
 
 <br>
@@ -72,7 +76,7 @@ router.replace("/acknow")
 Наличные
 </label>
 
-<button class="absolute bottom-4 right-4  rounded-xl py-2 px-6 my-4 text-white bg-[#b23a46] hover:bg-[#da1e37]">Заказать</button>
+<button class="absolute bottom-4 right-4  rounded-xl py-2 px-6 my-4 text-white bg-[#b23a46] hover:bg-[#da1e37] text-xl">Заказать</button>
 </form>
 </template>
 

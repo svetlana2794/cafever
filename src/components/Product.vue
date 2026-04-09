@@ -47,7 +47,7 @@ deep: true}
 
 <template>
 
-<div class="bg-[#ede0d4] rounded-xl m-2 p-4 h-full lg:w-[500px]">
+<div class="bg-[#ede0d4] rounded-xl m-4 p-4 h-full lg:w-[500px]">
 <h2 class="text-[#7f5539] text-3xl text-center py-2 px-16 w-full relative font-[Futura]">
 <button @click="router.go(-1)" class="absolute top-2 left-2">
 <font-awesome-icon icon="fa-solid fa-arrow-left"/>
@@ -55,10 +55,10 @@ deep: true}
 {{product.name}}
 </h2>
 <img :src="product.image" class="mx-auto my-6 w-[450px] rounded-lg">
-<div class="w-full m-2 md:text-lg xl:text-xl">
+<div class="w-full mx-2 my-4 md:text-lg xl:text-xl">
 {{product.structure}}
 </div>
-<span class="text-[#b23a48] font-bold m-2 md:text-lg xl:text-xl">{{product.price}} руб.</span>
+<span class="text-[#b23a48] font-bold mx-2 my-4md:text-lg xl:text-xl">{{product.price}} руб.</span>
 <Addition v-if="route.params.cat=='pizza'" @handle-add="(name, price) => newElem.adds.set(name, price)" :newElem="newElem"/>
 <button @click="addCart" :disabled="storeCart.cart.has(product.id)" class="text-white rounded-xl bg-[#b23a48] hover:bg-[#8c2f39] disabled:bg-[#e6ccb2] disabled:text-black py-2 px-4 mx-auto my-2 block md:text-lg xl:text-xl">{{storeCart.cart.has(product.id) ? 'Добавлено' : 'В корзину'}}</button>
 

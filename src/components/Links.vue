@@ -2,7 +2,7 @@
 </script>
 
 <template>
-<p class="flex flex-col md:flex-row justify-center items-center p-6">
+<p class="flex flex-col md:flex-row justify-center items-center p-2">
 
 <a href="tel:+7(495)123-45-67" class="py-2 px-4 m-4 text-white bg-[#b23a48] hover:bg-[#da1e37] rounded-full"> Позвонить нам
 <font-awesome-icon icon="fa-solid fa-phone" size="lg"/>
