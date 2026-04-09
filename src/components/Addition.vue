@@ -24,7 +24,7 @@ try {
 <ul class="text-base">
 <li v-for="item in addProds" :key="item.id" class="my-4 flex justify-between items-center">
 
-<span>{{item.name}}</span>
+<span class="grow">{{item.name}}</span>
 
 <span class="font-black">{{item.price}} руб.</span>
 
