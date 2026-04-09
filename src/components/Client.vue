@@ -20,18 +20,24 @@ router.replace("/delivery")
 
 <template>
 <form @submit.prevent="createClient" class="p-6 pb-32 bg-[#ede0d4] rounded-xl m-2 relative h-full">
-<h2 class="text-[#7f5539] text-3xl text-center font-[Futura]">
+<h2 class="text-[#7f5539] text-3xl text-center font-[Futura] mb-6">
 <span class="float-left">Шаг 1</span>
 Контактные данные</h2>
 
 <label class="inline-block w-full md:w-1/4 md:text-right p-2 pl-0 after:text-red-500 after:content-['*'] my-3">Имя</label>
-<input type="text" v-model="name" class="w-full md:w-3/4 p-2 rounded-lg border border-[#9c6644] border-solid outline-[#8c2f39] my-3" required>
+<input type="text" v-model="name" class="w-full md:w-1/4 p-2 rounded-lg border border-[#9c6644] border-solid outline-[#8c2f39] my-3" pattern="\w+">
+
+<br>
 
 <label class="inline-block w-full md:w-1/4 md:text-right p-2 pl-0 after:text-red-500 after:content-['*'] my-3">Телефон</label>
-<input type="tel" v-model="tel" class="w-full md:w-3/4 p-2 rounded-lg border border-[#9c6644] border-solid outline-[#8c2f39] my-3" required>
+<input type="tel" v-model="tel" class="w-full md:w-3/4 p-2 rounded-lg border border-[#9c6644] border-solid outline-[#8c2f39] my-3" pattern="\d{11}" placeholder="89xxxxxxxxx">
+
+<br>
 
 <label class="inline-block w-full md:w-1/4 md:text-right p-2 pl-0 my-3">Email</label>
 <input type="email" v-model="email" class="w-full md:w-3/4 p-2 rounded-lg border border-[#9c6644] border-solid outline-[#8c2f39] my-3">
+
+<br>
 
 <label class="p-2 my-2 ml-10 inline-block relative">
 <input type="checkbox" v-model="subscribe" class="invisible">

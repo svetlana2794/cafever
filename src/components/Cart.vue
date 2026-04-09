@@ -11,7 +11,7 @@ const router=useRouter()
 <template>
 
 <div class="bg-[#ede0d4] rounded-xl m-2 p-6 h-full">
-<h2 class="text-[#7f5539] text-center text-3xl md:text-4xl xl:text-6xl p-2 font-[Futura]">
+<h2 class="text-[#7f5539] text-center text-3xl p-2 font-[Futura]">
 
 <button v-if="storeCart.cart.size>0" @click="router.go(-1)" class="float-left">
 <font-awesome-icon icon="fa-solid fa-arrow-left"/>
@@ -51,7 +51,7 @@ const router=useRouter()
 
 <p class="text-[#b23a46]">{{item.price}} руб.</p>
 
-<ul v-if="item.adds.size>0" class="pl-16">
+<ul v-if="item.adds.size>0" class="pl-16 my-2">
 <span>Дополнения:</span>
 <li v-for="[name, price] in item.adds" :key="name" class="text-sm">
 {{name}} <span class="text-[#b23a46]">{{price}} руб.</span>

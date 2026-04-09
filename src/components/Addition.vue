@@ -21,12 +21,12 @@ try {
 </script>
 
 <template>
-<ul class="text-base">
+<ul class="text-base mx-2">
 <li v-for="item in addProds" :key="item.id" class="my-4 flex justify-between items-center">
 
 <span class="grow">{{item.name}}</span>
 
-<span class="font-black">{{item.price}} руб.</span>
+<span class="font-black mr-4">{{item.price}} руб.</span>
 
 <button @click="emit('handleAdd', item.name, item.price)" :disabled="newElem.adds.has(item.name)" class="text-white rounded-md p-2 bg-[#b23a46] hover:bg-[#da1e37] disabled:bg-[#e6ccb2] disabled:text-black shrink-0">{{newElem.adds.has(item.name) ? 'Добавлено' : 'Добавить'}}</button>
 </li>

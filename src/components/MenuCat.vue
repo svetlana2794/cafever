@@ -22,16 +22,16 @@ menuCat.value=err
 </script>
 
 <template>
-<div class="bg-[#ede0d4] rounded-xl m-2 h-full lg:w-3/4 p-2">
-<h2 class="text-[#7f5539] text-2xl text-center py-2 px-16 mb-4 w-full relative font-[Futura]">
+<div class="bg-[#ede0d4] rounded-xl my-2 h-full lg:w-3/4 p-2 mx-auto">
+<h2 class="text-[#7f5539] text-3xl text-center py-2 px-16 mb-4 w-full relative font-[Futura]">
 <button @click="router.go(-1)" class="top-2 left-2 absolute">
 <font-awesome-icon icon="fa-solid fa-arrow-left"/>
 </button>{{menuCat[0].cat}}</h2>
 
 <div class="w-full flex flex-col md:flex-row md:flex-wrap justify-between items-stretch md:justify-around md:content-around">
 <template v-for="item in menuCat" :key="item.id">
-<button @click="router.push(`/menu/${route.params.cat}/${item.id}`)" style="{backgroundImage: item.image}" class="bg-center bg-[100%_auto] rounded-xl m-2 w-xs h-[240px] relative hover:scale-130 origin-center">
-<span class="w-full absolute bottom-0 text-white bg-[#9E6A46] p-2 text-center">{{item.name}}</span>
+<button @click="router.push(`/menu/${route.params.cat}/${item.id}`)" style="{backgroundImage: 'url('+item.image+')'}" class="bg-center bg-[100%_auto] rounded-xl m-2 w-xs h-[240px] relative hover:scale-130 origin-center transition duration-500 linear">
+<span class="w-full absolute left-0 bottom-0 text-white bg-[#9E6A46] p-2 text-center">{{item.name}}</span>
 </button>
 </template>
 </div>

@@ -20,7 +20,7 @@ router.push("/")
 
 <template>
 <div class="p-2 bg-[#ede0d4] rounded-xl m-2 h-full">
-<h2 class="text-[#7f5539] text-2xl md:text-4xl xl:text-6xl text-center font-[Futura]">
+<h2 class="text-[#7f5539] text-3xl mb-6 text-center font-[Futura]">
 <span class="float-left">Шаг 3</span>
 Подтверждение заказа
 </h2>

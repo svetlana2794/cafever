@@ -20,12 +20,12 @@ const router=useRouter()
 <font-awesome-icon icon="fa-solid fa-bars"/>
 </button>
 </h1>
-<nav :class="['text-white', rotate ? 'scale-x-100' : 'scale-x-0', 'origin-right', 'transition-all', 'duration-500', 'ease-linear', 'xl:scale-x-100', 'flex', 'flex-col', 'items-stretch', 'xl:flex-row', 'absolute', 'right-0', 'top-24', 'xl:static', 'bg-[#9c6644]', 'text-xl', 'w-full', 'z-10', 'xl:ml-40']" @click="rotate=false">
-<button class="xl:grow py-4 hover:bg-[#9E6A46]" @click="router.push('/')">Главная</button>
-<button class="xl:grow py-4 text-center hover:bg-[#9E6A46]" @click="router.push('/menu')">Меню</button>
-<button class="xl:grow py-4 text-center hover:bg-[#9E6A46]" @click="router.push('/cart')">Корзина</button>
-<button class="xl:grow py-4 text-center hover:bg-[#9E6A46]" @click="router.push('/reserve')">Бронирование</button>
-<button class="xl:grow py-4 text-center hover:bg-[#9E6A46]" @click="router.push('/contacts')">О нас</button>
+<nav :class="['text-white', rotate ? 'scale-x-100' : 'scale-x-0', 'origin-right', 'transition-all', 'duration-500', 'ease-linear', 'xl:scale-x-100', 'flex', 'flex-col', 'items-stretch', 'xl:flex-row', 'absolute', 'right-0', 'top-24', 'xl:static', 'bg-[#9c6644]', 'text-xl', 'w-full', 'z-10', 'xl:ml-100']" @click="rotate=false">
+<button class="xl:grow py-4 hover:bg-[#875A3C]" @click="router.push('/')">Главная</button>
+<button class="xl:grow py-4 text-center hover:bg-[#875A3C]" @click="router.push('/menu')">Меню</button>
+<button class="xl:grow py-4 text-center hover:bg-[#875A3C]" @click="router.push('/cart')">Корзина</button>
+<button class="xl:grow py-4 text-center hover:bg-[#875A3C]" @click="router.push('/reserve')">Бронирование</button>
+<button class="xl:grow py-4 text-center hover:bg-[#875A3C]" @click="router.push('/contacts')">О нас</button>
 </nav>
 </header>
 
