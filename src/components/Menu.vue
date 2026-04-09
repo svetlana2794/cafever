@@ -29,7 +29,7 @@ menu.value=err
 
 <div class="w-full flex flex-col md:flex-row md:flex-wrap justify-between items-stretch md:justify-around md:content-around">
 <template v-for="item in menu" :key="item.id">
-<button @click="router.push(`/menu/${item.cat}`)" style="{backgroundImage: 'url('+item.image+')'}" class="bg-center bg-[100%_auto] rounded-xl m-2 w-xs h-[240px] relative hover:scale-130 origin-center transition duration-500 linear">
+<button @click="router.push(`/menu/${item.cat}`)" :style="{backgroundImage: 'url('+item.image+')'}" class="bg-center bg-[100%_auto] rounded-xl m-2 w-xs h-[240px] relative hover:scale-130 origin-center transition duration-500 linear">
 <span class="w-full absolute left-0 bottom-0 text-white bg-[#9E6A46] p-2 text-center">{{item.name}}</span>
 </button>
 </template>
