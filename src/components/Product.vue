@@ -52,7 +52,7 @@ deep: true
 
 <h2 class="text-[#7f5539] text-3xl text-center py-2 px-16 w-full relative font-[Futura]">
 
-<button @click="router.go(-1) class="absolute top-2 left-2">
+<button @click="router.go(-1)" class="absolute top-2 left-2">
 <font-awesome-icon icon="fa-solid fa-arrow-left"/>
 {{product.name}}
 </button>
@@ -64,7 +64,7 @@ deep: true
 
 <span class="text-[#b23a48] font-bold mx-2 my-4  md:text-lg xl:text-xl">{{product.price}} руб.</span>
 
-<Addition v-if="route.params.cat=='pizza'" @handle-add="(name, price) => newRldm.adds.set(name, price)" :newElem="newElem"/>
+<Addition v-if="route.params.cat=='pizza'" @handle-add="(name, price) => newElem.adds.set(name, price)" :newElem="newElem"/>
 
 <button @click="addCart" :disabled="storeCart.cart.has(product.id)" class="text-white rounded-xl bg-[#b23a48]  hover:bg-[#8c2f39] disabled:bg-[#e6ccb2] disabled:text-black py-2 px-4 mx-auto mt-4 mb-2 block md:text-lg xl:text-xl">
 {{storeCart.cart.has(product.id) ? 'Добавлено' : 'В корзину'}}
