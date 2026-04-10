@@ -1,6 +1,6 @@
 <script setup>
 import ButtonCart from "./ButtonCart.vue"
-import Addition ftom "./Addition.vue"
+import Addition from "./Addition.vue"
 
 import { useCartStore } from "../stores/storeCart.js"
 
