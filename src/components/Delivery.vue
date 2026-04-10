@@ -49,7 +49,7 @@ router.replace("/acknow")
 
 <br>
 
-<label class="inline-block w-full md:w-auto text-right p-2 mt-4 md:my-3 md:text-right">Квартира</label>
+<label class="inline-block w-full md:w-auto p-2 mt-4 md:my-3 md:text-right">Квартира</label>
 <input type="text" v-model="flat" class=" p-2 md:my-3 rounded-lg border border-[#9c6644] border-solid focus:border-[#8c2f39]" maxlength="6">
 
 <br>
