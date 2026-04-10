@@ -10,7 +10,7 @@ const router=useRouter()
 
 <template>
 
-<div class="bg-[#ede0d4] rounded-xl m-2 p-6 h-full">
+<div class="bg-[#ede0d4] rounded-xl m-2 p-2 h-full">
 <h2 class="text-[#7f5539] text-center text-3xl p-2 font-[Futura]">
 
 <button v-if="storeCart.cart.size>0" @click="router.go(-1)" class="float-left">
@@ -25,7 +25,7 @@ const router=useRouter()
 </h2>
 
 <template v-if="storeCart.cart.size>0">
-<ul class="p-2">
+<ul class=" mx-6 p-2">
 <li v-for="[key, item] in storeCart.cart" :key="key" class="p-4">
 
 <img :src="item.image" class="w-32 float-left rounded-xl">
@@ -64,7 +64,7 @@ const router=useRouter()
 
 <p class="text-[#b23a46] font-bold ml-2">Итого: {{storeCart.total}} руб.</p>
 
-<RouterLink to="/client" class="block py-4 px-8 mb-4 mt-8 mx-auto bg-[#b23a46] hover:bg-[#da1e37] text-white md:w-1/2 text-center rounded-full">Перейти к оформлению заказа</RouterLink>
+<RouterLink to="/client" class="block p-4  mb-4 mt-8 mx-auto bg-[#b23a46] hover:bg-[#da1e37] text-white md:w-1/2 text-center rounded-full">Перейти к оформлению заказа</RouterLink>
 </template>
 
 <template v-if="storeCart.cart.size==0">
