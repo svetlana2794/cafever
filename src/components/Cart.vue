@@ -25,7 +25,7 @@ const router=useRouter()
 </h2>
 
 <template v-if="storeCart.cart.size>0">
-<ul class="mx-6 p-2 w-[300px] md:w-[350px]">
+<ul class="mx-6 p-2 w-[280px] md:w-[350px]">
 <li v-for="[key, item] in storeCart.cart" :key="key" class="p-4">
 
 <img :src="item.image" class="w-32 float-left rounded-xl">
@@ -62,13 +62,13 @@ const router=useRouter()
 </li>
 </ul>
 
-<p class="font-bold ml-2">Итого: {{storeCart.total}} руб.</p>
-
-<p v-if="storeCart.total<1500" class="m-2 text-[#b23a46] text-center">Минимальная сумма заказа 1500 рублей</p>
+<p class="font-bold ml-6">Итого: {{storeCart.total}} руб.</p>
 
 <p v-if="storeCart.total>=1500" class="m-2">Стоимость доставки: {{storeCart.total < 2000 ? "250 руб." : "бесплатно"}}</p>
 
 <button :disabled="storeCart.total<1500" @click="router.push('/client')" class="block p-4  mb-4 mt-8 mx-auto bg-[#b23a46] hover:bg-[#da1e37] text-white md:w-1/2 text-center rounded-full disabled:bg-[#e6ccb2] disabled:text-black">Перейти к оформлению заказа</button>
+
+<p v-if="storeCart.total<1500" class="m-2 text-[#b23a46] text-center">Минимальная сумма заказа 1500 рублей</p>
 </template>
 
 <template v-if="storeCart.cart.size==0">
