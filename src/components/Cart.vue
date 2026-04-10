@@ -25,7 +25,7 @@ const router=useRouter()
 </h2>
 
 <template v-if="storeCart.cart.size>0">
-<ul class="mx-6 p-2 w-[350px]">
+<ul class="mx-6 p-2 w-[300px] md:w-[350px]">
 <li v-for="[key, item] in storeCart.cart" :key="key" class="p-4">
 
 <img :src="item.image" class="w-32 float-left rounded-xl">
