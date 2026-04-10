@@ -32,7 +32,7 @@ router.replace("/acknow")
 </h2>
 
 <label class="inline-block w-full md:w-1/5  p-2 mt-4 md:my-3 md:text-right after:text-red-500 after:content-['*']">Улица</label>
-<input type="text" v-model="street" class="w-full md:w-4/5 p-2 md:my-3 rounded-lg border border-[#9c6644] border-solid focus:border-[#8c2f39]" pattern="\w{3,}" required>
+<input type="text" v-model="street" class="w-full md:w-4/5 p-2 md:my-3 rounded-lg border border-[#9c6644] border-solid focus:border-[#8c2f39]" pattern="([А-Яа-я]|-|\.|\d){3,}" required>
 
 <br>
 
