@@ -22,7 +22,7 @@ menuCat.value=err
 </script>
 
 <template>
-<div class="bg-[#ede0d4] rounded-xl my-4 h-full lg:w-3/4 p-6 mx-auto">
+<div class="bg-[#ede0d4] rounded-xl my-4 h-full lg:w-3/4 p-2 mx-auto">
 <h2 class="text-[#7f5539] text-3xl text-center py-2 px-16 mb-4 w-full relative font-[Futura]">
 <button @click="router.go(-1)" class="top-2 left-2 absolute">
 <font-awesome-icon icon="fa-solid fa-arrow-left"/>
