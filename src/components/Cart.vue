@@ -68,7 +68,7 @@ const router=useRouter()
 
 <button :disabled="storeCart.total<1500" @click="router.push('/client')" class="block p-4  my-2 mx-auto bg-[#b23a46] hover:bg-[#da1e37] text-white md:w-1/2 text-center rounded-full disabled:bg-[#e6ccb2] disabled:text-black">Перейти к оформлению заказа</button>
 
-<p :style="[storeCart.total<1500 ? 'visible' : 'invisible', 'm-2',  'text-[#b23a46]', 'text-center']">Минимальная сумма заказа 1500 рублей</p>
+<p :class="[storeCart.total<1500 ? 'visible' : 'invisible', 'm-2',  'text-[#b23a46]', 'text-center']">Минимальная сумма заказа 1500 рублей</p>
 </template>
 
 <template v-if="storeCart.cart.size==0">
