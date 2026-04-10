@@ -64,7 +64,7 @@ const router=useRouter()
 
 <p class="font-bold ml-2">Итого: {{storeCart.total}} руб.</p>
 
-<p v-if="storeCart.total<1500" class="m-2 text-[#b23a46]"></p>
+<p v-if="storeCart.total<1500" class="m-2 text-[#b23a46] text-center">Минимальная сумма заказа 1500 рублей</p>
 
 <p v-if="storeCart.total>=1500" class="m-2">Стоимость доставки: {{storeCart.total < 2000 ? "250 руб." : "бесплатно"}}</p>
 

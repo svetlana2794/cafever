@@ -58,7 +58,7 @@ deep: true
 {{product.name}}
 </h2>
 
-<img :src="product.image" class="mx-auto my-6 w-xs lg:w-md rounded-lg">
+<img :src="product.image" class="mx-auto my-6 w-[320px] lg:w-[450px] rounded-lg">
 
 <p class="w-full mx-2 my-4 md:text-lg xl:text-xl">{{product.structure}}</p>
 
