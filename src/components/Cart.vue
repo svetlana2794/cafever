@@ -62,9 +62,13 @@ const router=useRouter()
 </li>
 </ul>
 
-<p class="text-[#b23a46] font-bold ml-2">Итого: {{storeCart.total}} руб.</p>
+<p class="font-bold ml-2">Итого: {{storeCart.total}} руб.</p>
 
-<RouterLink to="/client" class="block p-4  mb-4 mt-8 mx-auto bg-[#b23a46] hover:bg-[#da1e37] text-white md:w-1/2 text-center rounded-full">Перейти к оформлению заказа</RouterLink>
+<p v-if="storeCart.total<1500" class="m-2 text-[#b23a46]"></p>
+
+<p v-if="storeCart.total>=1500" class="m-2">Стоимость доставки: {{storeCart.total < 2000 ? "250 руб." : "бесплатно"}}</p>
+
+<button :disabled="storeCart.total<1500" @click="router.push('/client')" class="block p-4  mb-4 mt-8 mx-auto bg-[#b23a46] hover:bg-[#da1e37] text-white md:w-1/2 text-center rounded-full disabled:bg-[#e6ccb2] disabled:text-black">Перейти к оформлению заказа</button>
 </template>
 
 <template v-if="storeCart.cart.size==0">
