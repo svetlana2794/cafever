@@ -54,8 +54,8 @@ deep: true
 
 <button @click="router.go(-1)" class="absolute top-2 left-2">
 <font-awesome-icon icon="fa-solid fa-arrow-left"/>
-{{product.name}}
 </button>
+{{product.name}}
 </h2>
 
 <img :src="product.image" class="mx-auto my-6 w-xs lg:w-md rounded-lg">
