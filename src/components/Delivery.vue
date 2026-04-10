@@ -36,22 +36,20 @@ router.replace("/acknow")
 
 <br>
 
-<label class="inline-block p-2 mt-4 md:my-3 md:text-right after:text-red-500 after:content-['*'] md:w-1/5">Дом</label>
-<input type="text" v-model="house"class="inline-block p-2 md:my-3 rounded-lg border border-[#9c6644] border-solid focus:border-[#8c2f39]" maxlength="6" pattern=".+" required>
+<label class="inline-block w-full md:w-auto p-2 mt-4 md:my-3 md:text-right after:text-red-500 after:content-['*'] md:w-1/5">Дом</label>
+<input type="text" v-model="house"class="inline-block p-2 md:my-3 rounded-lg border border-[#9c6644] border-solid focus:border-[#8c2f39]" maxlength="6" pattern="(\d|\/|[А-Яа-я])+" required>
 
 <br>
 
-<label class="inline-block p-2 mt-4 md:my-3 md:text-right md:w-1/5">Корпус</label>
+<label class="inline-block w-full md:w-auto p-2 mt-4 md:my-3 md:text-right md:w-1/5">Корпус</label>
 <input type="text" v-model="corpus" class="p-2 md:my-3 rounded-lg border border-[#9c6644] border-solid focus:border-[#8c2f39]" maxlength="6">
 
-<br>
-
-<label class="inline-block p-2 mt-4md:my-3 md:text-right md:w-1/5">Строение</label>
+<label class="inline-block w-full md:w-auto p-2 mt-4 md:my-3 md:text-right md:w-1/5">Строение</label>
 <input type="text" v-model="building" class="p-2 md:my-3 rounded-lg border border-[#9c6644] border-solid focus:border-[#8c2f39]" maxlength="6">
 
 <br>
 
-<label class="inline-block text-right p-2 mt-4 md:my-3 md:text-right">Квартира</label>
+<label class="inline-block w-full md:w-auto text-right p-2 mt-4 md:my-3 md:text-right">Квартира</label>
 <input type="text" v-model="flat" class=" p-2 md:my-3 rounded-lg border border-[#9c6644] border-solid focus:border-[#8c2f39]" maxlength="6">
 
 <br>

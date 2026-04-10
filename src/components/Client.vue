@@ -27,7 +27,7 @@ router.replace("/delivery")
 Шаг 1. Контактные данные</h2>
 
 <label class="inline-block w-full md:w-1/4 md:text-right p-2 pl-0 after:text-red-500 after:content-['*'] mt-4 md:my-3">Имя</label>
-<input type="text" v-model="name" class="w-full md:w-3/4 p-2 rounded-lg border border-[#9c6644] border-solid outline-[#8c2f39] md:my-3" pattern="\w+" required>
+<input type="text" v-model="name" class="w-full md:w-3/4 p-2 rounded-lg border border-[#9c6644] border-solid outline-[#8c2f39] md:my-3" pattern="[А-Яа-я]+" required>
 
 <br>
 
