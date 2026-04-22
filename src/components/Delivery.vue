@@ -24,7 +24,7 @@ router.replace("/acknow")
 <template>
 <form @submit.prevent="createOrder" class="p-6 pb-25 bg-[#ede0d4] rounded-xl m-2 relative h-full">
 
-<h2 class="text-[#7f5539] text-3xl md:text-center font-[Futura] mb-6 px-16 relative">
+<h2 class="text-[#7f5539] text-3xl md:text-center font-[Futura] mb-6 px-16 py-2 relative">
 <button @click="router.go(-1)" class="absolute top-2 left-2">
 <font-awesome-icon icon="fa-solid fa-arrow-left"/>
 </button>
