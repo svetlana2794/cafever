@@ -1,7 +1,7 @@
 <script setup>
 import Links from './Links.vue'
 
-import { useRouter } from 'vue0router'
+import { useRouter } from 'vue-router'
 
 import { useCartStore } from '../stores/storeCart.js'   
 import { useOrderStore } from '../stores/storeOrder.js'
