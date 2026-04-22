@@ -56,7 +56,7 @@ router.replace("/acknow")
 
 <br>
 
-<label class="inline-block p-2 my-4">
+<label class="inline-block p-2 my-4 md:ml-10">
 <input type="radio" value="Карта" v-model="pay" class="invisible"/>
 <span v-if="pay!='Карта'">
 <font-awesome-icon icon="fa-regular fa-circle" size="lg" style="color: #b23a46"/>
@@ -67,7 +67,7 @@ router.replace("/acknow")
 Карта
 </label>
 
-<label class="inline-block p-2 my-4 md:ml-10">
+<label class="inline-block p-2 my-4 ">
 <input type="radio" value="Наличные" v-model="pay" class="invisible"/>
 <span v-if="pay!='Наличные'">
 <font-awesome-icon icon="fa-regular fa-circle" size="lg" style="color: #b23a46"/>
