@@ -21,7 +21,7 @@ function goToMain() {
 
 <div class='p-6 bg-[#ede0d4] rounded-xl m-2 h-full'>
 
-<h2 class='text-[#7f5539] text-3xl text-center font-[Futura]'>Шаг 3. Подтверждение заказа</h2>
+<h2 class='text-[#7f5539] text-3xl text-center font-[Futura] mb-10'>Шаг 3. Подтверждение заказа</h2>
 
 <Transition name='fade'mode='out-in'>
 
