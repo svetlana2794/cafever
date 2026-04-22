@@ -66,7 +66,7 @@ const router=useRouter()
 
 <p :class="[storeCart.total>=1500 ? 'visible' : 'invisible', 'm-2', 'mb-4', 'text-center']">Стоимость доставки: {{storeCart.total < 2000 ? "250 руб." : "бесплатно"}}</p>
 
-<button :disabled="storeCart.total<1500" @click="router.push('/client')" class="p-4  mb-2 mt-6 mx-auto bg-[#b23a46] hover:bg-[#da1e37] text-white text-center rounded-full disabled:bg-[#e6ccb2] disabled:text-black">Перейти к оформлению заказа</button>
+<button :disabled="storeCart.total<1500" @click="router.push('/client')" class="p-4 block mb-2 mt-6 mx-auto bg-[#b23a46] hover:bg-[#da1e37] text-white text-center rounded-full disabled:bg-[#e6ccb2] disabled:text-black">Перейти к оформлению заказа</button>
 
 <p :class="[storeCart.total<1500 ? 'visible' : 'invisible', 'm-2',  'text-[#b23a46]', 'text-center']">Минимальная сумма заказа 1500 рублей</p>
 </template>
