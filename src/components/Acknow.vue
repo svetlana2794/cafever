@@ -10,7 +10,7 @@ const storeCart=useCartStore()
 const storeOrder=useOrderStore()
 const router=useRouter()
 
-functiongoToMain() {
+function goToMain() {
     storeCart.cart.clear()
     storeOrder.step=0
     router.push('/')
