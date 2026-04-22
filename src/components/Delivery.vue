@@ -56,7 +56,7 @@ router.replace("/acknow")
 
 <br>
 
-<label class="inline-block p-2 my-4 md:ml-10">
+<label class="inline-block p-2 my-4 md:ml-15">
 <input type="radio" value="Карта" v-model="pay" class="invisible"/>
 <span v-if="pay!='Карта'">
 <font-awesome-icon icon="fa-regular fa-circle" size="lg" style="color: #b23a46"/>
