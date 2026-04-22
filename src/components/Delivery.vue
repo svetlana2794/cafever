@@ -67,7 +67,7 @@ router.replace("/acknow")
 Карта
 </label>
 
-<label class="inline-block p-2 my-4">
+<label class="inline-block p-2 my-4 md:ml-1/5">
 <input type="radio" value="Наличные" v-model="pay" class="invisible"/>
 <span v-if="pay!='Наличные'">
 <font-awesome-icon icon="fa-regular fa-circle" size="lg" style="color: #b23a46"/>
