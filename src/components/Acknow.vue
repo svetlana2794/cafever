@@ -19,21 +19,20 @@ router.push("/")
 </script>
 
 <template>
-<div class="p-2 bg-[#ede0d4] rounded-xl m-2 h-full">
-<h2 class="text-[#7f5539] text-2xl md:text-4xl xl:text-6xl text-center font-[Futura]">
-<span class="float-left">Шаг 3</span>
-Подтверждение заказа
+<div class="p-6 bg-[#ede0d4] rounded-xl m-2 h-full">
+<h2 class="text-[#7f5539] text-3xl text-center font-[Futura]">
+Шаг 3. Подтверждение заказа
 </h2>
 
 <Transition name="fade" mode="out-in">
 
-<div v-if="storeOrder.status=='loading'" class="text-center text-2xl my-4">
+<div v-if="storeOrder.status=='loading'" class="text-center text-2xl my-8">
 Заказ обрабатывается...<br>
 <span class="block my-10">
 <font-awesome-icon icon="fa-solid fa-spinner" size="2xl" style="color: #7f5539" class="spin"/>
 </span>
 </div>
-<div v-else-if="storeOrder.status=='ok'" class="text-2xl text-center my-4">Ваш заказ успешно передан.
+<div v-else-if="storeOrder.status=='ok'" class="text-2xl text-center my-8">Ваш заказ успешно передан.
 <br>
 <span class="my-6 block">
 Номер заказа: {{storeOrder.numOrder}}
