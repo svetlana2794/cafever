@@ -26,13 +26,13 @@ router.push("/")
 
 <Transition name="fade" mode="out-in">
 
-<div v-if="storeOrder.status=='loading'" class="text-center text-2xl my-8">
+<div v-if="storeOrder.status=='loading'" class="text-center text-2xl my-4">
 Заказ обрабатывается...<br>
 <span class="block my-10">
 <font-awesome-icon icon="fa-solid fa-spinner" size="2xl" style="color: #7f5539" class="spin"/>
 </span>
 </div>
-<div v-else-if="storeOrder.status=='ok'" class="text-2xl text-center my-8">Ваш заказ успешно передан.
+<div v-else-if="storeOrder.status=='ok'" class="text-2xl text-center my-4">Ваш заказ успешно передан.
 <br>
 <span class="my-6 block">
 Номер заказа: {{storeOrder.numOrder}}

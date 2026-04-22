@@ -1,0 +1,34 @@
+<script setup>
+import Links from "./Links.vue"
+
+import { useRouter } from "vue-router"
+
+import { useCartStore } from "../stores/storeCart.js"
+import { useOrderStore } from "../stores/storeOrder.js"
+
+const storeCart=useCartStore()
+const storeOrder=useOrderStore()
+const router=useRouter()
+
+function goToMain() {
+storeCart.cart.clear()
+storeOrder.step=0
+router.push("/")
+}
+</script>
+
+<template>
+<div class="p-6 bg-[#ede0d4] rounded-xl m-2 h-full">
+
+<h2 class="text-[#7f5539] text-3xl text-center font-[Futura]">Шаг 3. Подтверждение заказа</h2>
+
+<Transition name="fade" mode="out-in">
+
+<div v-if="storeOrder.status=='loading'"></div>
+
+</Transition>
+
+</div>
+</template>
+
+<style scoped></style>
