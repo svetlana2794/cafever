@@ -7,8 +7,8 @@ const router=useRouter()
 <template>
 <div class="p-6 text-4xl m-2 text-center bg-[#ede0d4] rounded-xl">
   <p class="w-full py-4 relative">
-  <img src="../../public/imgs/front1.jpeg" class="relative left-1/2 -translate-x-4/5 z-1 w-50">
-  <img src="../../public/imgs/front2.jpeg" class="relative left-1/2 translate-x-1/5 z-10 w-50">
+  <img src="../../public/imgs/front1.jpeg" class="relative -translate-x-4/5 z-1 w-50">
+  <img src="../../public/imgs/front2.jpeg" class="relative translate-x-1/5 z-10 w-50">
     </p>
 <p class="py-4 font-[Futura]">Свет, простор и теплая атмосфера.</p>
 <p class="py-4 font-[Futura]">Все, за что мы любим Италию - в одном месте.</p>
