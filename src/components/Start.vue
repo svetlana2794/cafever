@@ -6,6 +6,10 @@ const router=useRouter()
 
 <template>
 <div class="p-6 text-4xl m-2 text-center bg-[#ede0d4] rounded-xl">
+  <p class="w-full py-4 relative">
+  <img src="../../public/imgs/front1.jpeg" class="relative left-1/2 -translate-4/5 z-1">
+  <img src="../../public/imgs/front2.jpeg" class="relative left-1/2 translate-1/5 z-10">
+    </p>
 <p class="py-4 font-[Futura]">Свет, простор и теплая атмосфера.</p>
 <p class="py-4 font-[Futura]">Все, за что мы любим Италию - в одном месте.</p>
 <RouterLink class="bg-[#b23a46] text-white hover:bg-[#da1e37] px-4 py-2 block mx-auto mb-6 mt-20 w-1/2 text-center rounded-full" to="/menu">Меню</RouterLink>
