@@ -19,12 +19,5 @@
 		"price": 240,
 		"image": "/data/water/water3.jpeg",
 		"cat": "Напитки"
-	},
-	{
-		"id": 54,
-		"name": "Сок Rich яблоко",
-		"price": 250,
-		"image": "/data/water/water4.jpeg",
-		"cat": "Напитки"
 	}
 ]
